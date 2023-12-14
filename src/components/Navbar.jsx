@@ -11,7 +11,7 @@ const Navbar = () => {
   } 
 
   return (
-    <nav className='z-50 p-3  shadow-lg shadow-red-900  mb-[300px] fixed w-full bg-black text-orange-500 flex justify-between items-center' >
+    <nav className='z-50 p-3  shadow-lg shadow-gray-900  mb-[300px] fixed w-full bg-black text-orange-500 flex justify-between items-center' >
       <Link to='/'>
       {/* <h1 className='font-bold text-3xl text-white'> <span className='text-orange-500 font-bold text-5xl  rotate-45 '>U</span>niqpay</h1> */}
       <div className=' h-[40px]'>
@@ -25,10 +25,15 @@ const Navbar = () => {
             <Link className='no-underline hover:underline' to='/' >Home</Link>
         </li>
         <li>
-            <Link to='/user' >Admin</Link>
+            <Link to='/login' >Login</Link>
         </li>
         <li>
-            <Link to='/login' >Login</Link>
+ <Link to="/signup" >
+ Register
+ </Link>
+        </li>
+        <li>
+            <Link to='/user' >Admin</Link>
         </li>
         <li>
             <Link to='/proflie' >Profile</Link>

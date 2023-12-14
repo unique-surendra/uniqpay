@@ -38,7 +38,7 @@ fetchData()
   return (
 
 
-    <div className=' mt-8 h-[200vh] bg-gradient-to-r from-zinc-400 to-red-200 '>
+    <div className=' mt-6 p-10  h-[200vh] bg-gradient-to-r from-zinc-400 to-red-200 '>
       
 
 <h1>

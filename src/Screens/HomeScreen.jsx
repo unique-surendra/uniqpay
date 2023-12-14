@@ -1,34 +1,48 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection'
-
-
+import Card from '../components/Card'
+import Team from '../components/Team'
+import Parterners from '../components/Parterners'
+ 
 const HomeScreen = () => {
+
   return (
-<div className='mt-6  h-[100%] w-full bg-gradient-to-r from-zinc-400 to-red-200 '>
+<div className='  mt-6  h-[100%] w-full bg-white '>
+{/* bg-gradient-to-r from-zinc-400 to-red-200 */}
+ 
 
 <HeroSection/>
-<div className=" w-full  md:pt-[400px] pt-[300px] m-auto  pb-10  bg-orange-200 flex flex-wrap gap-10 ">
-  <div className=" shadow-orange-900 shadow-2xl rounded-xl p-10 w-[400px] m-auto  bg-white h-[500px]">
-  <h1>card 1</h1>
-  <div className="card">
-    <img src="/Uniqpay.gif" alt="card" />
-  </div>
-</div>
-<div className=" shadow-orange-900 shadow-2xl rounded-xl p-10 w-[400px] m-auto bg-white h-[500px]">
-  <h1>card 2</h1>
-  <div className="card">
-    <img src="/Uniqpay.gif" alt="card" />
-  </div>
-</div>
-<div className=" shadow-orange-900 shadow-2xl rounded-xl p-10 w-[400px] m-auto bg-white h-[500px]">
-  <h1>card 3</h1>
-  <div className="card">
-    <img src="/Uniqpay.gif" alt="card" />
-  </div>
-</div>
 
 
-  </div>
+  
+  <section>
+
+
+ <hr  className='text-black h-1 bg-blue-950 ' />
+    <h1 className=' text-center text-3xl font-extrabold pt-8   ' >Our Services</h1>
+
+<div className=" w-full  md:pt-[200px] pt-[300px] m-auto  pb-[200px] flex flex-wrap gap-10 ">
+
+<Card heading="Service 1" text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, ipsa eius!" btnText="Explore more" />
+<Card heading="Service 2" text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, ipsa eius!" btnText="Explore more" />
+<Card heading="Service 3" text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, ipsa eius!" btnText="Explore more" />
+
+</div>
+  </section>
+
+
+
+  <section>
+ <Parterners/>
+
+  </section>
+
+  <section>
+
+    <Team/>
+    
+    </section>
+
 </div>
   )
 }

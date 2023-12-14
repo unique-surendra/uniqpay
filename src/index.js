@@ -7,8 +7,9 @@ import {createBrowserRouter,createRoutesFromElements,RouterProvider,Route} from 
 import Dashboard from "./Screens/Dasboard"
 import HomeScreen from './Screens/HomeScreen';
 import ProfileScreen from './Screens/ProfileScreen'
+import SignupForm from "./Screens/SignUpForm"
 import PrivateRoute from './components/PrivateRoute'
-import Login from './Screens/Login';
+import SignInForm from './Screens/SignInForm';
 import Users from './components/Users';
 import { store } from './store';
 import { Provider } from 'react-redux';
@@ -23,7 +24,8 @@ const router = createBrowserRouter(
 />} >
 
 <Route path='/' index={true} element={<HomeScreen/>} />
-<Route path='/login'  element={<Login/>} />
+<Route path='/login'  element={<SignInForm/>} />
+<Route path='/signup'  element={<SignupForm/>} />
 <Route path='/user'  element={<Users/>} />
 
 {/* Privates routes */}

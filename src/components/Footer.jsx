@@ -41,36 +41,43 @@ const Footer = () => {
     </div>
 </div>
 
-<div className="social  w-[400px] h-[200px]  leading-2   flex flex-wrap  m-auto mt-10 mb-10     justify-center items-center gap-5 ">
+<div className="social   shadow-lg shadow-gray-900  w-[400px] h-[200px]  leading-2   flex flex-wrap  m-auto mt-10 mb-10     justify-center items-center gap-5 ">
 
 
-<Link className='text-pink-600 text-2xl hover:text-3xl   w-[20px]  ' to="/">
+<Link className='text-pink-600 hover:pb-5  text-2xl hover:text-3xl   w-[20px]  ' to="/">
 <FaInstagram/>
 </Link>  
 
-<Link  className='text-blue-800 text-2xl hover:text-3xl   w-[20px]   ' to="/">
+<Link  className='text-blue-800 hover:pb-5 text-2xl hover:text-3xl   w-[20px]   ' to="/">
 <FaFacebook/>
  </Link>  
- <Link className='text-sky-700 text-2xl hover:text-3xl   w-[20px]  '  to="/">
+ <Link className='text-sky-700 hover:pb-5 text-2xl hover:text-3xl   w-[20px]  '  to="/">
 <FaTwitter/>
  </Link>  
- <Link  className='text-red-700 text-2xl hover:text-3xl   w-[20px]  ' to="/">
+ <Link  className='text-red-700 hover:pb-5 text-2xl hover:text-3xl   w-[20px]  ' to="/">
  <FaYoutube/>
 </Link>  
-<Link  className='text-blue-500 text-2xl hover:text-3xl  w-[20px]   ' to="/">
+<Link  className='text-blue-500 hover:pb-5 text-2xl hover:text-3xl  w-[20px]   ' to="/">
 <FaLinkedin/>
  </Link>  
- <Link className='text-white text-2xl hover:text-3xl  w-[20px]  '    to="/">
+ <Link className='text-white hover:pb-5 text-2xl hover:text-3xl  w-[20px]  '    to="/">
 <FaGithub/>
  </Link>  
        
 </div>
 
 
-<div className="copyright text-center  ">
-    <h6>&copy;2023 <span>All rights are reserved</span> </h6> 
+<div className="copyright text-center text-xs pb-7  ">
+    <h6>Copyright &copy;2023 <span>All rights are reserved</span> </h6> 
      
     <p>Powerd by uniqpayment</p>
+</div>
+
+<div className='flex h-5 justify-evenly p-5 pb-8 text-xs' >
+<span>Terms of Use</span>
+<span>Privacy Policy</span>
+<span>FQA</span>
+<span>Cookie Policy</span>
 </div>
 
 </div>
