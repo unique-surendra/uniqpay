@@ -25,21 +25,21 @@ const Navbar = () => {
             <Link className='no-underline hover:underline' to='/' >Home</Link>
         </li>
         <li>
-            <Link to='/login' >Login</Link>
+            <Link to='/login' >Sign In</Link>
         </li>
         <li>
  <Link to="/signup" >
- Register
+ create account
  </Link>
         </li>
         <li>
-            <Link to='/user' >Admin</Link>
+            <Link to='/user' > Support</Link>
         </li>
         <li>
-            <Link to='/proflie' >Profile</Link>
+            <Link to='/proflie' >Company</Link>
         </li>
         <li>
-            <Link to='/dashboard' >Dashboard</Link>
+            <Link to='/dashboard' >Developer API</Link>
         </li>
       </ul>
       <ul className='block lg:hidden'>
@@ -53,10 +53,7 @@ const Navbar = () => {
 <li onClick={togglebtn} className='hover:bg-black w-full'>
     <Link to='/user' >Admin</Link>
 </li>
-{/* <li onClick={togglebtn} className='hover:bg-black w-[100%]'>
-    <Link className='' to='/login' >Login</Link>
-</li> */}
-<li onClick={togglebtn} className='hover:bg-black w-full'>
+ <li onClick={togglebtn} className='hover:bg-black w-full'>
     <Link to='/proflie' >Profile</Link>
 </li>
 <li onClick={togglebtn} className='hover:bg-black w-full'>

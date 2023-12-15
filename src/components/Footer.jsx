@@ -41,7 +41,7 @@ const Footer = () => {
     </div>
 </div>
 
-<div className="social   shadow-lg shadow-gray-900  w-[400px] h-[200px]  leading-2   flex flex-wrap  m-auto mt-10 mb-10     justify-center items-center gap-5 ">
+<div className="social   shadow-lg shadow-gray-900  max-w-[400px] h-[200px]  leading-2   flex flex-wrap  m-auto mt-10 mb-10     justify-center items-center gap-5 ">
 
 
 <Link className='text-pink-600 hover:pb-5  text-2xl hover:text-3xl   w-[20px]  ' to="/">

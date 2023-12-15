@@ -75,7 +75,7 @@ const SignInForm = () => {
         <div className='flex justify-around items-center' >
 
 
-        <button type="submit" className="bg-orange-600 text-white p-2 rounded hover:bg-orange-800">
+        <button type="submit" className="bg-orange-600 px-4  text-white p-2 rounded hover:bg-orange-800">
           Sign In
         </button>
 

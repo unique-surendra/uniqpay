@@ -10,6 +10,7 @@ import ProfileScreen from './Screens/ProfileScreen'
 import SignupForm from "./Screens/SignUpForm"
 import PrivateRoute from './components/PrivateRoute'
 import SignInForm from './Screens/SignInForm';
+import Error from './components/Error/Error';
 import Users from './components/Users';
 import { store } from './store';
 import { Provider } from 'react-redux';
@@ -18,27 +19,22 @@ import { Provider } from 'react-redux';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route path="/" index={true} element={<HomeScreen />} />
+      <Route path="/login" element={<SignInForm />} />
+      <Route path="/signup" element={<SignupForm />} />
+      <Route path="/user" element={<Users />} />
 
+      {/* Privates routes */}
+      <Route path="" element={<PrivateRoute />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/proflie" element={<ProfileScreen />} />
+      </Route>
 
-<Route path='/' element={<App
-/>} >
-
-<Route path='/' index={true} element={<HomeScreen/>} />
-<Route path='/login'  element={<SignInForm/>} />
-<Route path='/signup'  element={<SignupForm/>} />
-<Route path='/user'  element={<Users/>} />
-
-{/* Privates routes */}
-<Route path='' element={<PrivateRoute/>}>
-<Route path='/dashboard'  element={<Dashboard/>} />
-<Route path='/proflie'  element={<ProfileScreen/>} />
-</Route>
-
-
-
-</Route>
+      <Route path="*" element={<Error />} />
+    </Route>
   )
-)
+);
 
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
