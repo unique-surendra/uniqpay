@@ -12,13 +12,18 @@
     "item1 item1 item2 "
     "item1 item1 item3 ";
   padding: 5rem 1rem;
+  /* background: url("/public/backbg.jpg") no-repeat center center/cover; */
 }
 
 .item {
+    border-radius: 17px;
+
   background: url("/public/bg.webp") no-repeat center center/cover;
 }
 
 .item1 {
+  
+  border-radius: 17px;
   grid-area: item1;
 }
 
@@ -27,13 +32,12 @@
   grid-area: item2;
 }
 
-.item3 {
-  grid-area: item3;
-}
+
 .item2,
 .item3 {
   min-width: 300px;
   min-height: 300px;
+  height: 100%;
     background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.3),
@@ -42,7 +46,15 @@
 
 }
 
+.item3 {
+ 
+  grid-area: item3;
+  background: url("/public/backbg1.jpg") no-repeat center center/cover;
+}
+
 .heading-text {
+    border-radius: 17px;
+
   height: 100%;
   width: 100%;
   text-transform: capitalize;
@@ -71,7 +83,7 @@
 
 .features {
   text-align: center;
-  height: 300px;
+  height:400px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -85,12 +97,15 @@
   min-width: 200px;
   background: #fff;
   color: #000;
-  margin-top: 10px;
-  border: #fa2815 1px solid  ;
+  margin-bottom: 10px;
+  /* border: #fa2815 1px solid  ; */
   animation:slide-y 10s linear infinite ;
   box-shadow: 0px 0px 2px 1px  #158ffa;
   border-radius: 17px;
-  
+  padding: 0px 10px;
+display: flex;
+justify-content: center;  
+align-items: center;
 
 }
 

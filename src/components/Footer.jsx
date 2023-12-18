@@ -68,7 +68,7 @@ const Footer = () => {
 
 
 <div className="copyright text-center text-xs pb-7  ">
-    <h6>Copyright &copy;2023 <span>All rights are reserved</span> </h6> 
+    <h6>Copyright &copy;2023 <span>All rights reserved</span> </h6> 
      
     <p>Powerd by uniqpayment</p>
 </div>

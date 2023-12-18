@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import {motion} from "framer-motion"
-
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const SignInForm = () => {
   // State for form fields
   const [formData, setFormData] = useState({
-    
-    email: '',
-    password: '',
+    email: "",
+    password: "",
   });
 
   // Handle form field changes
@@ -22,28 +19,23 @@ const SignInForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your signup logic here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
   return (
     <motion.div
-    
-    initial={{ opacity: 0, scale: 0.1 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.9 }}
-    
-
-    
-    
-    className="max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl">
+      initial={{ opacity: 0, scale: 0.1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9 }}
+      className="max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl"
+    >
       <h2 className="text-2xl font-semibold mb-4">Sign In</h2>
       <form onSubmit={handleSubmit}>
-        
-
-        
-
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
@@ -58,7 +50,10 @@ const SignInForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
             Password
           </label>
           <input
@@ -72,19 +67,20 @@ const SignInForm = () => {
           />
         </div>
 
-        <div className='flex justify-around items-center' >
+        <div className="flex justify-around  items-center">
+          <button
+            type="submit"
+            className="bg-orange-600 px-4  text-white p-2 rounded hover:bg-orange-800"
+          >
+            Sign In
+          </button>
 
-
-        <button type="submit" className="bg-orange-600 px-4  text-white p-2 rounded hover:bg-orange-800">
-          Sign In
-        </button>
-
-        <p>
-          Do not have an account ?  <Link className='text-blue-800' to="/signup" >Register here</Link>
-
-        </p>
-
-       
+          <p>
+            Do not have an account ?{" "}
+            <Link className="text-blue-800" to="/signup">
+              Register here
+            </Link>
+          </p>
         </div>
       </form>
     </motion.div>

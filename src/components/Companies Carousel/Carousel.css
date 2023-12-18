@@ -1,0 +1,49 @@
+.carousel-company {
+  position: relative;
+  background-color: #ddd6;
+  /* border: 1px slategrey solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+   margin: 100px 0px 100px 0px;
+  padding: 20px;
+  overflow: hidden;
+  /* rotate: -10deg; */
+  rotate: 2 0 1 10deg;
+}
+
+.carousel-company div {
+  height: 200px;
+  min-width: 200px;
+  position: inherit;
+   /* background-color: #085fb1; */
+ 
+  cursor: pointer;
+  border-radius: 17px;
+  animation: slide-x 4s linear infinite;
+  margin: 10px;
+}
+
+.carousel-company div img {
+  width: 100%;
+  height: 100%;
+  background: center center/cover;
+}
+
+.carousel-company > div:hover {
+  /* background-color: #fc9b0afb; */
+  background-color: #085fb6;
+  /* animation: none; */
+  z-index: 999;
+  /* animation: reverse; */
+}
+
+@keyframes slide-x {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

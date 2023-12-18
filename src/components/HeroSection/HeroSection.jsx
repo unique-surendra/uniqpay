@@ -15,7 +15,7 @@ const HeroSection = () => {
 
   return (
     <section className="w-full h-[100%]">
-      <marquee
+      {/* <marquee
         className=" font-bold tracking-tight h-[80px] text-2xl bg-orange-600 flex justify-center items-center"
         behavior="scroll"
         direction="left"
@@ -23,12 +23,14 @@ const HeroSection = () => {
         <div>
           <ul className="flex  gap-10">
             <li className="text-white ">Fast & Secure Transaction </li>
-            <li className="text-black ">Fast & Secure Transaction </li>
-            <li className="text-white ">Fast & Secure Transaction </li>
+            <li className="text-black ">
+              Payments Infrastructure for Internet 
+            </li>
+            <li className="text-white ">Online Payments </li>
             <li className="text-black ">Fast & Secure Transaction </li>
           </ul>
         </div>
-      </marquee>
+      </marquee> */}
 
       <motion.div
         // ref={ref}
@@ -49,10 +51,10 @@ const HeroSection = () => {
               </h1>
               <div className="btn flex justify-evenly w-[300px]  ">
                 <Link to="/signup">
-                <Button text="Get Start" />
+                  <Button text="Get Started" />
                 </Link>
-                <Link className=" "  to="/login">
-                 <Button text="Login" />
+                <Link className=" " to="/login">
+                  <Button text="Login" />
                 </Link>
               </div>
               <div className="text">
@@ -65,14 +67,21 @@ const HeroSection = () => {
             </section>
           </div>
         </div>
-        <div className="item item2  h-[100%] w-[100%] bg-orange-800 ">
-          <div className="features">
-            <div className="feature1 feature">Feature1</div>
-            <div className="feature2 feature">Feature2</div>
-            <div className="feature3 feature">Feature3</div>
-            <div className="feature4 feature">Feature4</div>
-            <div className="feature5 feature">Feature5</div>
-            <div className="feature6 feature">Feature6</div>
+        <div className="item item2   h-[100%] w-[100%] bg-orange-600 ">
+          <div className="features   min-h-[300px]">
+            <h1 className="text-2xl rounded-t-lg capitalize py-1  z-40 w-full  text-white  bg-orange-700 ">
+              Features
+            </h1>
+            <div className="feature1 feature">
+              DETAILED REPORTING AND ANALYTICS
+            </div>
+            <div className="feature2 feature">RECONCILIATION TOOLS</div>
+            <div className="feature3 feature">
+              MASS PAYOUTS AND BULK SETTLEMENTS
+            </div>
+            <div className="feature4 feature">CUSTOMIZABLE DASHBOARDS</div>
+            <div className="feature5 feature">DEVELOPER DOCUMENTATION</div>
+            <div className="feature6 feature">24/7 CUSTOMER SUPPORT</div>
           </div>
         </div>
         <div className="item item3">item3</div>
