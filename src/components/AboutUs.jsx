@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -32,10 +33,11 @@ const AboutUs = () => {
       </p>
 
       <div className="btn  ">
-
-        <Button text="Explore more" />
+                  <Link to="/aboutus">
+          <Button text="Explore more" />
+        </Link>
         <br />
-        <Button text="" />
+        {/* <Button text="" /> */}
       </div>
     </div>
   );

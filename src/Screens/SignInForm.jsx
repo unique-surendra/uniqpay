@@ -78,7 +78,7 @@ const SignInForm = () => {
           <p>
             Do not have an account ?{" "}
             <Link className="text-blue-800" to="/signup">
-              Register here
+              Register now
             </Link>
           </p>
         </div>

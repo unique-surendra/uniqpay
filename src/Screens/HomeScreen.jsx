@@ -104,7 +104,7 @@ const HomeScreen = () => {
             iste molestias optio itaque modi magni similique voluptates numquam?"
         />
       </section>
-      <section>
+      <section id="aboutcompany">
         <AboutUs />
       </section>
       <section className="min-h-[100vh] ">

@@ -1,6 +1,7 @@
 import "./Reviews.css";
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+// import Review from "./Review/Review";
 
 const Reviews = () => {
   const opacity = 0;
@@ -20,8 +21,10 @@ const Reviews = () => {
       <motion.div
         ref={ref}
         style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-        className="members"
+        className="members pb-[100px]"
       >
+         
+
         <div className="itemm itemm1">
           <div className=" text-center">
             <div className="reviews-img relative h-[80px] w-[80px] m-auto  ">
@@ -32,7 +35,7 @@ const Reviews = () => {
               />
             </div>
             <h1 className="font-bold captialize text-center  m-auto mt-[-40px]   ">
-              Name of XXXX
+              Name XYZ
             </h1>
             <p className="text-justify p-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,7 +77,7 @@ const Reviews = () => {
               />
             </div>
             <h1 className="font-bold captialize text-center  m-auto mt-[-40px]   ">
-              Name of XXXX
+              Name XYZ
             </h1>
             <p className="text-justify p-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -116,7 +119,7 @@ const Reviews = () => {
               />
             </div>
             <h1 className="font-bold captialize text-center  m-auto mt-[-40px]   ">
-              Name of XXXX
+              Name XYZ
             </h1>
             <p className="text-justify p-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -126,33 +129,6 @@ const Reviews = () => {
             </p>
           </div>
         </div>
-
-        <div className="itemm itemm1">
-          <div className=" text-center">
-            <div className="reviews-img relative h-[80px] w-[80px] m-auto  ">
-              <img
-                className="absolute h-[100%] w-[100%] mt-[-40px] rounded-full border border-red-800 "
-                src="/backbg.jpg"
-                alt="item1"
-              />
-            </div>
-            <h1 className="font-bold captialize text-center  m-auto mt-[-40px]   ">
-              Name of XXXX
-            </h1>
-            <p className="text-justify p-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Aspernatur debitis quam praesentium aliquid porro! Non fugit
-              cupiditate animi, magni fuga deleniti! Sequi dicta assumenda sint
-              incidunt. Eum deleniti veritatis reprehenderit.
-            </p>
-          </div>
-        </div>
-
-        
-
-        
- 
-        
       </motion.div>
     </div>
   );

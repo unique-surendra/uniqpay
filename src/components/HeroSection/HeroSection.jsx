@@ -24,14 +24,14 @@ const HeroSection = () => {
           <ul className="flex  gap-10">
             <li className="text-white ">Fast & Secure Transaction </li>
             <li className="text-black ">
-              Payments Infrastructure for Internet 
+              Payments Infrastructure for Internet
             </li>
             <li className="text-white ">Online Payments </li>
             <li className="text-black ">Fast & Secure Transaction </li>
           </ul>
         </div>
-      </marquee> */}
-
+      </marquee>
+ */}
       <motion.div
         // ref={ref}
         // style={{scale:scrollYProgress,
@@ -45,8 +45,8 @@ const HeroSection = () => {
         <div className="item item1">
           <div className="btn"></div>
           <div className="heading-text">
-            <section className="flex justify-center items-center flex-col">
-              <h1 className="text-6xl font-bold text-white text-center">
+            <section className="flex justify-start items-center flex-col">
+              <h1 className="text-3xl md:text-6xl mb-10 mt-6 font-bold text-white text-center">
                 Fast & secure transaction
               </h1>
               <div className="btn flex justify-evenly w-[300px]  ">
@@ -87,32 +87,29 @@ const HeroSection = () => {
         <div className="item item3">item3</div>
       </motion.div>
 
-      {/* <motion.div 
-   ref={ref}
-    style={{scale:scrollYProgress,
-    opacity:scrollYProgress}}
- 
-    className="hero-bg min-h-[100vh]     ">
-      <h1 className=" lg:text-8xl text-6xl font-bold text-center capitalize pt-20 ">
-        For <span className="text-orange-600">Best</span> Experience 
-      </h1>
+      {/* <motion.div
+        ref={ref}
+        style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+        className="hero-bg min-h-[100vh]     "
+      >
+        <h1 className=" lg:text-8xl text-6xl font-bold text-center capitalize pt-20 ">
+          For <span className="text-orange-600">Best</span> Experience
+        </h1>
 
+        <br />
+        <h2 className="text-3xl font-bold  text-end pr-10  ">
+          Start with{" "}
+          <span className="text-orange-600 font-bold text-4xl">uniqpay</span>
+        </h2>
 
-     
-
-
-    <br />
-    <h2 className="text-3xl font-bold  text-end pr-10  ">
-        Start with <span className="text-orange-600 font-bold text-4xl" >uniqpay</span>  
-      </h2>
-
-
-
-      <div className="hero-content max-h-[100px]  max-w-2xl ">
-        <img className="h-[100%] w-[100%] rounded-full  "  src="/Uniqpay.gif" alt="" />
-      </div>
-    </motion.div>
- */}
+        <div className="hero-content max-h-[100px]  max-w-2xl ">
+          <img
+            className="h-[100%] w-[100%] rounded-full  "
+            src="/Uniqpay.gif"
+            alt=""
+          />
+        </div>
+      </motion.div> */}
     </section>
   );
 };

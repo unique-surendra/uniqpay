@@ -7,8 +7,10 @@ import {createBrowserRouter,createRoutesFromElements,RouterProvider,Route} from 
 import Dashboard from "./Screens/Dasboard"
 import HomeScreen from './Screens/HomeScreen';
 import ProfileScreen from './Screens/ProfileScreen'
+import Support from './Screens/Support'; 
 import SignupForm from "./Screens/SignUpForm"
 import PrivateRoute from './components/PrivateRoute'
+import AboutScreen from './Screens/AboutScreen';
 import SignInForm from './Screens/SignInForm';
 import Error from './components/Error/Error';
 import Users from './components/Users';
@@ -24,6 +26,9 @@ const router = createBrowserRouter(
       <Route path="/login" element={<SignInForm />} />
       <Route path="/signup" element={<SignupForm />} />
       <Route path="/user" element={<Users />} />
+      <Route path="/aboutus" element={<AboutScreen />} />
+      <Route path="/support" element={<Support />} />
+
 
       {/* Privates routes */}
       <Route path="" element={<PrivateRoute />}>
