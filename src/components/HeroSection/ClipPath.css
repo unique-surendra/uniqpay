@@ -1,0 +1,14 @@
+.clip-path {
+   background-color: var(--bccolor);
+  width: 100%;
+  /* border: 1px solid #0001; */
+  margin: auto;
+ }
+
+.clip {
+  height: 60vh;
+  background-color: #fff;
+  padding: 100px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 0% 70%);
+  margin: auto;
+}

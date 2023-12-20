@@ -60,8 +60,8 @@ const Reviews = () => {
             <p className="text-justify p-10">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Aspernatur debitis quam praesentium aliquid porro! Non fugit
-              cupiditate animi, magni fuga deleniti! Sequi dicta assumenda sint
-              incidunt. Eum deleniti veritatis reprehenderit.
+                favriote candidate in this entire
+              school
             </p>
           </div>
         </div>

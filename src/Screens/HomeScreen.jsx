@@ -28,16 +28,15 @@ const HomeScreen = () => {
 
   return (
     <section>
-       
-
       <div className="  mt-6  h-[100%] w-full bg-white ">
         {/* bg-gradient-to-r from-zinc-400 to-red-200 */}
 
         <HeroSection />
 
         <section>
-          <hr className="text-black h-1 bg-blue-950 " />
-          <h1 className=" text-center text-3xl  pt-8   ">Our Services</h1>
+          <hr className="text-black bg-blue-950 " />
+          <h1 className=" text-center mb-5 text-3xl  pt-8   ">Our Services</h1>
+          <hr className="" />
 
           <div className=" w-full  md:pt-[200px] pt-[300px] m-auto  pb-[200px] flex flex-wrap gap-10 ">
             <Card
@@ -139,7 +138,7 @@ const HomeScreen = () => {
         <section>{/* <Team /> */}</section>
       </div>
 
-      <BackToTop/>
+      <BackToTop />
     </section>
   );
 };

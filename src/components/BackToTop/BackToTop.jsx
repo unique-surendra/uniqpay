@@ -25,11 +25,10 @@ const BackToTop = () => {
     <>
       {backTop && (
         <button
-          className=" text-white text-5xl flex items-center justify-center rounded-sm z-50 fixed right-0 top-[80vh] bg-orange-700 h-[50px] w-[50px]"
+          style={{ backgroundColor: "#ff6905" }}
+          className=" text-white text-5xl flex items-center justify-center rounded-sm z-50 fixed right-0 top-[80vh]  h-[50px] w-[50px]"
           onClick={scrollTop}
         >
-
-
           ^
         </button>
       )}

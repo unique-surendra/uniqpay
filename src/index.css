@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root{
+  --bccolor:#ff6905;
+  --textcolor:#3339
+}
+
+
 
 body {
   background-color: #ddd6;

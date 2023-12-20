@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "./HeroSection.css";
 import Button from "../Button";
 import OutlinedButton from "../OutlinedButton";
+import ClipPath from "./ClipPath";
 
 const HeroSection = () => {
   const opacity = 0;
@@ -13,6 +14,12 @@ const HeroSection = () => {
     target: ref,
     offset: ["1 0", "1.1 1"],
   });
+
+  
+  const handleScrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
+
 
   return (
     <section className="w-full h-[100%]">
@@ -58,7 +65,7 @@ const HeroSection = () => {
                   <Button className="p-5" text="Login" />
                 </Link> */}
 
-                <Link className="  " to="/login">
+                <Link onClick={handleScrollToTop} className="  " to="/login">
                   <OutlinedButton className="p-5" text="Login" />
                 </Link>
               </div>
@@ -91,6 +98,8 @@ const HeroSection = () => {
         </div>
         <div className="item item3">item3</div>
       </motion.div>
+
+      <ClipPath />
 
       {/* <motion.div
         ref={ref}

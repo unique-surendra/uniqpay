@@ -10,7 +10,7 @@ const Navbar = () => {
   const togglebtn = (e) => {
     e.preventDefault();
     setTogglemenu((prev) => !prev);
- 
+  
   };
 
   const togglebtnicon = (e) => {
@@ -104,11 +104,11 @@ const Navbar = () => {
       <ul className="block lg:hidden">
         <h1 onClick={togglebtn} className="cursor-pointer">
           {togglemenuicon ? (
-            <span onClick={togglebtnicon} class="material-symbols-outlined">
+            <span onClick={togglebtnicon} class="material-symbols-outlined  text-5xl">
               close
             </span>
           ) : (
-            <span onClick={togglebtnicon} class="material-symbols-outlined">
+            <span onClick={togglebtnicon} class="material-symbols-outlined text-5xl">
               menu
             </span>
           )}
@@ -116,36 +116,64 @@ const Navbar = () => {
         {togglemenu ? (
           <>
             <div className="z-50 leading-8 shadow-lg shadow-orange-900	 p-5 rounded-lg fixed w-[200px] ml-[-150px] mt-[6px] bg-gray-900 px-4 ">
-              <li onClick={togglebtn} className="hover:bg-black w-full">
-                <Link onClick={handleScrollToTop} className=" " to="/">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className="hover:bg-black w-full"
+              >
+                <Link className=" " to="/">
                   Home
                 </Link>
               </li>
 
-              <li onClick={togglebtn} className="hover:bg-black w-full">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className="hover:bg-black w-full"
+              >
                 <Link lassName=" " to="/login">
                   Sign In
                 </Link>
               </li>
-              <li onClick={togglebtn} className="hover:bg-black w-full">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className="hover:bg-black w-full"
+              >
                 <Link lassName=" " to="/signup">
                   Create Account
                 </Link>
               </li>
 
-              <li onClick={togglebtn} className=" hover:bg-black w-full">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className=" hover:bg-black w-full"
+              >
                 <Link lassName=" " to="/aboutus">
                   Company
                   <span class="material-symbols-outlined">expand_more</span>
                 </Link>
                 <div className="devapilist    ">
                   <ul>
-                    <li>
-                      <Link
-                        onClick={handleScrollToTop}
-                        lassName=" "
-                        to="/aboutus"
-                      >
+                    <li
+                      onClick={(e) => {
+                        handleScrollToTop();
+                      }}
+                    >
+                      <Link lassName=" " to="/aboutus">
                         About
                       </Link>
                     </li>
@@ -173,7 +201,14 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              <li onClick={togglebtn} className="hover:bg-black w-full">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className="hover:bg-black w-full"
+              >
                 <Link lassName=" " to="/dashboard">
                   Developer API
                   <span class="  material-symbols-outlined">expand_more</span>
@@ -188,7 +223,14 @@ const Navbar = () => {
                   </ul>
                 </div>
               </li>
-              <li onClick={togglebtn} className="hover:bg-black w-full">
+              <li
+                onClick={(e) => {
+                  togglebtn(e);
+                  togglebtnicon(e);
+                  handleScrollToTop();
+                }}
+                className="hover:bg-black w-full"
+              >
                 <Link to="/dashboard">Dashboard</Link>
               </li>
             </div>
