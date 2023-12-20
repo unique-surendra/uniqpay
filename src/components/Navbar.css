@@ -30,18 +30,18 @@ nav ul li:hover:after {
 }
 
 .pay {
-  animation: rotatePay 2s linear infinite;
-  transition: 2s;
+  animation: colorChange .5s linear infinite;
+  transition: .5s;
 }
 
-@keyframes rotatePay {
+@keyframes colorChange {
   0% {
     color: #fff;
   }
 
   100% {
- 
-     color: #fb4d08;
+    color: #fb4d08;
+  
   }
 }
 
@@ -57,7 +57,7 @@ ul li .devapilist {
   height: 0%;
   min-width: 200px;
   text-align: center;
-  background-color: rgb(17 24 39);
+  background-color: #111827;
    line-height: 2;
 
   z-index: 99;
@@ -74,7 +74,7 @@ ul li .devapilist {
 
 ul li:hover .devapilist {
   display: block;
-  height:200px;
+  min-height:200px;
   /* box-shadow: 0px 0px 20px 3px #cd410c; */
 }
 

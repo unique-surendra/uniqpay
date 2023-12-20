@@ -10,6 +10,11 @@ const Navbar = () => {
     setTogglemenu((prev) => !prev);
   };
 
+ const handleScrollToTop = ()=>{
+  window.scroll({top:0,behavior:"smooth"})
+ }
+
+
   return (
     <nav className="z-50 p-3   shadow-gray-900  mb-[300px] fixed w-full bg-black text-orange-500 flex justify-between items-center">
       <Link to="/">
@@ -30,29 +35,39 @@ const Navbar = () => {
           <span className="material-symbols-outlined"></span>
         </li>
         <li>
-          <Link lassName=" " to="/login">
+          <Link onClick={handleScrollToTop} lassName=" " to="/login">
             Sign In
           </Link>
         </li>
         <li>
-          <Link lassName=" " to="/signup">
+          <Link onClick={handleScrollToTop} lassName=" " to="/signup">
             Create account
           </Link>
         </li>
 
         <li>
-            Company
-           <div className="devapilist    ">
+          <Link to="/aboutus">Company</Link>
+          <div className="devapilist    ">
             <ul>
               <li>
-                <Link lassName=" " to="/aboutus">
+                <Link onClick={handleScrollToTop} lassName=" " to="/aboutus">
                   About
                 </Link>
               </li>
               <li>Services</li>
               <li>
-                <Link lassName=" " to="/support">
+                <Link onClick={handleScrollToTop} lassName=" " to="/support">
                   Support
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={handleScrollToTop}
+                  lassName=""
+                  to="/careers
+"
+                >
+                  Careers
                 </Link>
               </li>
               <li>Contact</li>
@@ -104,11 +119,33 @@ const Navbar = () => {
                 </Link>
                 <div className="devapilist    ">
                   <ul>
-                    <li>About</li>
+                    <li>
+                      <Link
+                        onClick={handleScrollToTop}
+                        lassName=" "
+                        to="/aboutus"
+                      >
+                        About
+                      </Link>
+                    </li>
                     <li>Services</li>
                     <li>
-                      <Link lassName="" to="/support">
+                      <Link
+                        onClick={handleScrollToTop}
+                        lassName=""
+                        to="/support"
+                      >
                         Support
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleScrollToTop}
+                        lassName=""
+                        to="/careers
+"
+                      >
+                        Careers
                       </Link>
                     </li>
                     <li>Contact</li>

@@ -12,6 +12,7 @@ import SignupForm from "./Screens/SignUpForm"
 import PrivateRoute from './components/PrivateRoute'
 import AboutScreen from './Screens/AboutScreen';
 import SignInForm from './Screens/SignInForm';
+import Careers from './Screens/Careers/Careers';
 import Error from './components/Error/Error';
 import Users from './components/Users';
 import { store } from './store';
@@ -28,7 +29,7 @@ const router = createBrowserRouter(
       <Route path="/user" element={<Users />} />
       <Route path="/aboutus" element={<AboutScreen />} />
       <Route path="/support" element={<Support />} />
-
+      <Route path="/careers" element={<Careers />} />
 
       {/* Privates routes */}
       <Route path="" element={<PrivateRoute />}>
