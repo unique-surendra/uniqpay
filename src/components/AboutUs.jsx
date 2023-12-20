@@ -3,6 +3,10 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
+
+  const handleScrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   return (
     <div className="m-10">
       <h1 className="text-center  mb-100 text-3xl p-10 ">About Us</h1>
@@ -32,8 +36,8 @@ const AboutUs = () => {
         voluptatibus consequatur perferendis.
       </p>
 
-      <div className="btn  ">
-                  <Link to="/aboutus">
+      <div className="btn ">
+        <Link onClick={handleScrollToTop} to="/aboutus">
           <Button text="Explore more" />
         </Link>
         <br />

@@ -8,9 +8,22 @@ nav ul {
 
 nav ul li {
   position: relative;
-  padding: 2px;
+  padding: 3px;
+  /* padding-left: 1px; */
+  padding-right: 10px;
   margin: auto;
 }
+
+nav ul li span{
+  position: absolute;
+  margin-top:5px;
+  
+}
+
+
+nav ul li:hover  span{
+  rotate: 180deg;
+ }
 
 nav ul li::after {
   content: "";
@@ -30,7 +43,7 @@ nav ul li:hover:after {
 }
 
 .pay {
-  animation: colorChange .5s linear infinite;
+  /* animation: colorChange .5s linear infinite; */
   transition: .5s;
 }
 

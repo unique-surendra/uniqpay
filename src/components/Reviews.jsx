@@ -17,6 +17,7 @@ const Reviews = () => {
       <div className="w-full text-center ">
         <h1 className="text-black text-3xl font-bol w-full ">Reviews</h1>
       </div>
+      <hr />
 
       <motion.div
         ref={ref}

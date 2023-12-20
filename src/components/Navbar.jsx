@@ -4,16 +4,24 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [togglemenu, setTogglemenu] = useState(false);
+  // const [login, setLogin] = useState(false)
+  const [togglemenuicon, setTogglemenuicon] = useState(false);
 
   const togglebtn = (e) => {
     e.preventDefault();
     setTogglemenu((prev) => !prev);
+ 
   };
 
- const handleScrollToTop = ()=>{
-  window.scroll({top:0,behavior:"smooth"})
- }
+  const togglebtnicon = (e) => {
+    e.preventDefault();
+    setTogglemenuicon((prev) => !prev);
+ 
+  };
 
+  const handleScrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <nav className="z-50 p-3   shadow-gray-900  mb-[300px] fixed w-full bg-black text-orange-500 flex justify-between items-center">
@@ -28,7 +36,7 @@ const Navbar = () => {
       </Link>
 
       <ul className=" gap-3 hidden lg:flex ">
-        <li className=" ">
+        <li onClick={handleScrollToTop} className=" ">
           <Link className=" " to="/">
             Home
           </Link>
@@ -46,8 +54,11 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/aboutus">Company</Link>
-          <div className="devapilist    ">
+          <Link to="/aboutus">
+            Company
+            <span class="material-symbols-outlined">expand_more</span>
+          </Link>
+          <div className="devapilist">
             <ul>
               <li>
                 <Link onClick={handleScrollToTop} lassName=" " to="/aboutus">
@@ -77,6 +88,7 @@ const Navbar = () => {
         <li lassName="devapi">
           <Link lassName=" " to="/dashboard">
             Developer API
+            <span class="material-symbols-outlined">expand_more</span>
           </Link>
           <div className="devapilist    ">
             <ul>
@@ -91,13 +103,21 @@ const Navbar = () => {
       </ul>
       <ul className="block lg:hidden">
         <h1 onClick={togglebtn} className="cursor-pointer">
-          Profile
+          {togglemenuicon ? (
+            <span onClick={togglebtnicon} class="material-symbols-outlined">
+              close
+            </span>
+          ) : (
+            <span onClick={togglebtnicon} class="material-symbols-outlined">
+              menu
+            </span>
+          )}
         </h1>
         {togglemenu ? (
           <>
-            <div className="z-50 leading-8 shadow-lg shadow-orange-900	 p-5 rounded-lg fixed w-[200px] ml-[-150px] mt-[6px] bg-gray-900 ">
+            <div className="z-50 leading-8 shadow-lg shadow-orange-900	 p-5 rounded-lg fixed w-[200px] ml-[-150px] mt-[6px] bg-gray-900 px-4 ">
               <li onClick={togglebtn} className="hover:bg-black w-full">
-                <Link className=" " to="/">
+                <Link onClick={handleScrollToTop} className=" " to="/">
                   Home
                 </Link>
               </li>
@@ -113,9 +133,10 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li onClick={togglebtn} className="hover:bg-black w-full">
+              <li onClick={togglebtn} className=" hover:bg-black w-full">
                 <Link lassName=" " to="/aboutus">
                   Company
+                  <span class="material-symbols-outlined">expand_more</span>
                 </Link>
                 <div className="devapilist    ">
                   <ul>
@@ -155,6 +176,7 @@ const Navbar = () => {
               <li onClick={togglebtn} className="hover:bg-black w-full">
                 <Link lassName=" " to="/dashboard">
                   Developer API
+                  <span class="  material-symbols-outlined">expand_more</span>
                 </Link>
                 <div className="devapilist ">
                   <ul className=" ">

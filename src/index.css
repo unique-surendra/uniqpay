@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ddd6;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,79 +17,69 @@
     border-radius: 20px;
 } */
 
-.hero-bg{
-    height: 100%;
-    width: 100%;
-    background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fonline-banking&psig=AOvVaw32nngU9qJ0WykngCR0JxcI&ust=1702642660332000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiLsq70joMDFQAAAAAdAAAAABAD");
-
+.hero-bg {
+  height: 100%;
+  width: 100%;
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fonline-banking&psig=AOvVaw32nngU9qJ0WykngCR0JxcI&ust=1702642660332000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOiLsq70joMDFQAAAAAdAAAAABAD");
 }
 
-.employee{
-    width: 80%;
-    margin: auto;
-    display: flex;
-    row-gap:20px;
-    align-items: center;
-    justify-content:space-evenly;
-      
+.employee {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.employee .emp-img,.employee .emp-text{
-    width: 40%;
-    padding: 10px;
-    text-align: justify;
-    margin: 10px;
-
- }
-
- .employee .emp-img{
-     width:200px;
-     height: 200px;
-     margin: auto;
-     /* background: #000; */
+.employee .emp-img,
+.employee .emp-text {
+  width: 40%;
+  padding: 10px;
+  text-align: justify;
+  margin: 10px;
 }
-.employee .emp-img img{
-    height: 100%;
-    width: 100%;
-    margin: auto;
 
- }
-
-
-
+.employee .emp-img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  /* background: #000; */
+}
+.employee .emp-img img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
 
 /* carousel */
-.carousel{
-    height: 100px;
-    width: 90%;
-    /* background: #99f; */
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #0003;
-    border-radius: 1em;
-    
-    display: flex;
-    justify-content: space-between;
-    row-gap: 20px;
-    align-items: center;
-    
-    
-}
-.carousel h1{
-    animation: partner 10s  linear infinite;
-    background: #0052;
-    min-height: 100px;
-    margin-right: 20px;
+.carousel {
+  height: 100px;
+  width: 90%;
+  /* background: #99f; */
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #0003;
+  border-radius: 1em;
 
-  }
+  display: flex;
+  justify-content: space-between;
+  row-gap: 20px;
+  align-items: center;
+}
+.carousel h1 {
+  animation: partner 10s linear infinite;
+  background: #0052;
+  min-height: 100px;
+  margin-right: 20px;
+}
 
 @keyframes partner {
+  0% {
+    transform: translateX(-600px);
+  }
 
-    0%{
-        transform: translateX(-600px);
-    }
-    
-/*     
+  /*     
     25%{
         background: #d00;
         transform: translateX(-100px);
@@ -90,28 +90,23 @@
         background: #000;
         transform: translateX(-400px);
     } */
-         
- 
-    100%{
-         transform: translateX(0px);
 
-    }
-   
-
-    
+  100% {
+    transform: translateX(0px);
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .employee {
+    flex-direction: column;
+  }
+  .employee .emp-img,
+  .employee .emp-text {
+    width: 100%;
+  }
+}
 
-@media screen and (max-width:768px) {
-    
-    
-    .employee{
-        flex-direction: column;
-     }
-     .employee .emp-img,.employee .emp-text{
-        width: 100%;
-     }
-    
-    
-    
+/* Sign up & signin */
+
+.signup {
 }

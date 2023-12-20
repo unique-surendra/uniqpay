@@ -1,28 +1,43 @@
-.carousel-company {
+.carousel1 {
   position: relative;
-  background-color: #ddd6;
-  /* border: 1px slategrey solid; */
   display: flex;
   align-items: center;
   justify-content: center;
-  width:100%;
-   margin: 100px 0px 100px 0px;
+  min-width: 100px;
+  width: 100%;
+  margin: 100px 0px 100px 0px;
   padding: 20px;
-  overflow: hidden;
-  /* rotate: -10deg; */
-  rotate: 2 0 1 10deg;
+  rotate: -6deg;
+  height: 250px;
+  background-color: #ddd6;
+  /* rotate: 2 0 1 10deg; */
+
 }
 
+.carousel-company {
+  
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 6deg;
+ }
+
 .carousel-company div {
-  height: 200px;
-  min-width: 200px;
+  height: 150px;
+  min-width: 100px;
+  width: 100%;
   position: inherit;
-   /* background-color: #085fb1; */
- 
+  /* background-color: #ddd6; */
   cursor: pointer;
   border-radius: 17px;
   animation: slide-x 4s linear infinite;
   margin: 10px;
+
+ 
 }
 
 .carousel-company div img {
@@ -44,6 +59,6 @@
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 }

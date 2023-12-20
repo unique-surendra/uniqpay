@@ -27,7 +27,7 @@ const SignInForm = () => {
       initial={{ opacity: 0, scale: 0.1 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.9 }}
-      className="max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl"
+      className="signin max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl"
     >
       <h2 className="text-2xl font-semibold mb-4">Sign In</h2>
       <form onSubmit={handleSubmit}>

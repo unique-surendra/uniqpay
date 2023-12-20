@@ -31,20 +31,19 @@ const SignupForm = () => {
   };
 
   return (
-    <motion.div 
-    initial={{ opacity: 0, scale: 0.1 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.9 }}
-    
-
-    
-    
-    
-    className="max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.9 }}
+      className="signup max-w-md mx-auto mt-20 mb-40  border    p-6 bg-white rounded-md shadow-2xl"
+    >
       <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="firstName">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="firstName"
+          >
             First Name
           </label>
           <input
@@ -59,7 +58,10 @@ const SignupForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="lastName">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="lastName"
+          >
             Last Name
           </label>
           <input
@@ -74,7 +76,10 @@ const SignupForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
@@ -89,7 +94,10 @@ const SignupForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
             Password
           </label>
           <input
@@ -104,8 +112,11 @@ const SignupForm = () => {
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
-          Confirm  Password
+          <label
+            className="block text-gray-700 text-sm font-bold mb-2"
+            htmlFor="password"
+          >
+            Confirm Password
           </label>
           <input
             type="password"
@@ -117,19 +128,20 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className='flex justify-around items-center ' >
+        <div className="flex justify-around items-center ">
+          <button
+            type="submit"
+            className="bg-orange-600 text-white p-2 rounded hover:bg-orange-800"
+          >
+            Sign Up
+          </button>
 
-
-        <button type="submit" className="bg-orange-600 text-white p-2 rounded hover:bg-orange-800">
-          Sign Up
-        </button>
-
-        <p>
-          Already have an account ?  <Link className='text-blue-800' to="/login" >Login here</Link>
-
-        </p>
-
-       
+          <p>
+            Already have an account ?{" "}
+            <Link className="text-blue-800" to="/login">
+              Login here
+            </Link>
+          </p>
         </div>
       </form>
     </motion.div>

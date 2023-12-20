@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 // import imgurl from './public/backbg.jpg'
 
 import "./HomeScreen.css"
+import BackToTop from "../components/BackToTop/BackToTop";
 
 
 const HomeScreen = () => {
@@ -132,11 +133,13 @@ const HomeScreen = () => {
           onChange={goToSections}
           className="min-h-[100vh] "
         >
-          <hr />
           <Reviews />
+          {/* <hr /> */}
         </section>
         <section>{/* <Team /> */}</section>
       </div>
+
+      <BackToTop/>
     </section>
   );
 };
