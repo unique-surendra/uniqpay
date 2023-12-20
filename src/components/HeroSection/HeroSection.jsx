@@ -3,6 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./HeroSection.css";
 import Button from "../Button";
+import OutlinedButton from "../OutlinedButton";
 
 const HeroSection = () => {
   const opacity = 0;
@@ -27,11 +28,11 @@ const HeroSection = () => {
               Payments Infrastructure for Internet
             </li>
             <li className="text-white ">Online Payments </li>
-            <li className="text-black ">Fast & Secure Transaction </li>
+            <li className="text-black ">Payment Processing Made Simple </li>
           </ul>
         </div>
-      </marquee>
- */}
+      </marquee> */}
+
       <motion.div
         // ref={ref}
         // style={{scale:scrollYProgress,
@@ -53,8 +54,12 @@ const HeroSection = () => {
                 <Link to="/signup">
                   <Button text="Get Started" />
                 </Link>
-                <Link className=" " to="/login">
-                  <Button text="Login" />
+                {/* <Link className="  " to="/login">
+                  <Button className="p-5" text="Login" />
+                </Link> */}
+
+                <Link className="  " to="/login">
+                  <OutlinedButton className="p-5" text="Login" />
                 </Link>
               </div>
               <div className="text">

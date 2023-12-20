@@ -17,17 +17,20 @@ const OurProducts = ({
             <div className="prduct-img">
               {/* <h1 className="text-center p-5 font-bold ">Product Heading</h1> */}
               <img src={imgpath1} alt={imgtext1} />
+              <div className="ward-product"></div>
             </div>
           </div>
           <div className="abutproduct">
             <h1 className=" pt-5 pb-1 font-bold ">About Product </h1>
-            <p>{abouttext1}</p>
+            <hr className="mb-3"/>
+            <p className="p-5">{abouttext1}</p>
           </div>
         </section>
         <section className="products">
           <div className="abutproduct">
             <h1 className=" pt-5 pb-1 font-bold ">About Product </h1>
-            <p>{abouttext2}</p>
+            <hr className="mb-3"/>
+            <p className="p-5">{abouttext2}</p>
           </div>
           <div className="product">
             <div className="prduct-img">

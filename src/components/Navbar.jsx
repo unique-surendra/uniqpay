@@ -28,7 +28,7 @@ const Navbar = () => {
       <Link to="/">
         <div className=" h-[40px]">
           {/* <img className="h-[100%]" src="/logo.png" alt="logo" /> */}
-          <h1 className="font-bold text-2xl">
+          <h1 onClick={handleScrollToTop} className="font-bold text-2xl">
             <span className="text-white">Benak</span>
             <span className="pay">Pay</span>
           </h1>
